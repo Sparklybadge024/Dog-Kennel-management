@@ -18,7 +18,12 @@ public static void main(String[] args){
     System.out.println(dogKennelStep1.name);//Pow
     System.out.println(dogKennelStep2.name);//Pow
     
-    // Creating a 3rd reference variable.
+    // Creating a 3rd reference variable for object re-assignment and to observe the memory behaviour.
     Dog dogKen=dogKennelStep2;
+    dogKen.name="Bolt";
+    dogKen.age=4;
+    System.out.println(dogKennelStep1.name);//Bolt
+    System.out.println(dogKennelStep2.name);//Bolt
+    System.out.println(dogKen.name);//Bolt
     }
 }
