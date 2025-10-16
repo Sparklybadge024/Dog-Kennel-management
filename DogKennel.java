@@ -11,5 +11,14 @@ public static void main(String[] args){
     dogKennelStep1.age=8;
     dogKennelStep1.vaccinated=true;
     System.out.println("Dog name is "+dogKennelStep1.name+" he is "+dogKennelStep1.age+" years old and his vaccination status is: "+dogKennelStep1.vaccinated);
+    
+    // Creating a 2nd reference variable to understand the concept and working of reference variable.
+    Dog dogKennelStep2=dogKennelStep1;
+    dogKennelStep2.name="Pow";
+    System.out.println(dogKennelStep1.name);//Pow
+    System.out.println(dogKennelStep2.name);//Pow
+    
+    // Creating a 3rd reference variable.
+    Dog dogKen=dogKennelStep2;
     }
 }
