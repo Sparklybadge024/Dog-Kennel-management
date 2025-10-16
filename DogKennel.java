@@ -2,6 +2,10 @@ class Dog{
     String name;
     byte age;
     boolean vaccinated;
+
+    void bark(){
+      System.out.println(this.name+" is barking.");
+    }
 }
 
 public class DogKennel{
@@ -25,5 +29,9 @@ public static void main(String[] args){
     System.out.println(dogKennelStep1.name);//Bolt
     System.out.println(dogKennelStep2.name);//Bolt
     System.out.println(dogKen.name);//Bolt
+
+    // Added a method bark and using it to see the results.
+    dogKen.bark();//Bolt is barking.
+
     }
 }
