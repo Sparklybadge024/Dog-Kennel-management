@@ -6,6 +6,11 @@ class Dog{
     void bark(){
       System.out.println(this.name+" is barking.");
     }
+
+    void vaccination(){
+      this.vaccinated=true;
+      System.out.println("Vaccination status of "+this.name+" is "+this.vaccinated);
+    }
 }
 
 public class DogKennel{
@@ -32,6 +37,9 @@ public static void main(String[] args){
 
     // Added a method bark and using it to see the results.
     dogKen.bark();//Bolt is barking.
+
+    // Added a vaccination method in dog class 
+    dogKen.vaccination();
 
     }
 }
