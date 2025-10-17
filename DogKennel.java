@@ -1,3 +1,5 @@
+// encoding: UTF-8
+
 class Dog{
     String name;
     byte age;
@@ -16,6 +18,18 @@ class Dog{
       System.out.println(this.name+" & "+otherDog.name+" are friends");
       this.name=this.name+" & "+otherDog.name;
       System.out.println(this.name);
+    }
+
+    void feed(){
+      System.out.println(this.name+" is eating"+ "🦴🦴🦴");
+    }
+
+    void walk(){
+      System.out.println(this.name+" is walking happily🐕🐕🐕");
+    }
+
+    void sleep(){
+      System.out.println(this.name+" is sleeping 🐕‍🦺🐕‍🦺🐕‍🦺");
     }
 }
 
@@ -75,5 +89,14 @@ public static void main(String[] args){
     dog2.meet(dog1);
     // Tucker & Bryan are friends
     // Tucker & Bryan
+
+    // Now we will track dogs activities
+    dog1.feed();//Bryan is eating???
+
+    dogKen.walk();//Bolt is walking happily???
+    dog2.name="Tucker";
+    dog2.sleep();//Tucker is sleeping ?????????
+
+    // I guess Java don't recognise emojis
     }
   }
