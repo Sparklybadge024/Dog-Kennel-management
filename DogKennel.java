@@ -40,6 +40,6 @@ public static void main(String[] args){
 
     // Added a vaccination method in dog class 
     dogKen.vaccination();
-
+       
     }
 }
