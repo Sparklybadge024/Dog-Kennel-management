@@ -40,6 +40,29 @@ public static void main(String[] args){
 
     // Added a vaccination method in dog class 
     dogKen.vaccination();
-       
+
+    // Adding 2 separate dog objects
+    Dog dog1=new Dog();
+    Dog dog2=new Dog();
+
+    dog1.name="Pepper";
+    dog1.age=2;
+    dog1.vaccinated=false;
+
+    dog2.name="Tucker";
+    dog2.age=3;
+    dog2.vaccinated=false;
+    System.out.println(dog1.name);//Pepper
+    System.out.println(dog2.name);//Tucker
+
+    dog1.name="Bryan";
+    System.out.println(dog1.name);//Bryan
+    System.out.println(dog2.name);//Tucker
+
+    dog1.bark();//Bryan is barking.
+    dog2.bark();//Tucker is barking.
+
+    dog1.vaccination();//Vaccination status of Bryan is true
+    dog2.vaccination();//Vaccination status of Tucker is true
     }
 }
