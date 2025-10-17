@@ -11,6 +11,12 @@ class Dog{
       this.vaccinated=true;
       System.out.println("Vaccination status of "+this.name+" is "+this.vaccinated);
     }
+
+    void meet(Dog otherDog){
+      System.out.println(this.name+" & "+otherDog.name+" are friends");
+      this.name=this.name+" & "+otherDog.name;
+      System.out.println(this.name);
+    }
 }
 
 public class DogKennel{
@@ -64,5 +70,10 @@ public static void main(String[] args){
 
     dog1.vaccination();//Vaccination status of Bryan is true
     dog2.vaccination();//Vaccination status of Tucker is true
+
+    // Helping 2 dogs to meet each other and befriend each other
+    dog2.meet(dog1);
+    // Tucker & Bryan are friends
+    // Tucker & Bryan
     }
-}
+  }
