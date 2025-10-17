@@ -6,15 +6,18 @@ class Dog{
     boolean vaccinated;
 
     void bark(){
+      // As the name suggest this method will make the dog objects bark...
       System.out.println(this.name+" is barking.");
     }
 
     void vaccination(){
+      // This method will vaccinate dogs
       this.vaccinated=true;
       System.out.println("Vaccination status of "+this.name+" is "+this.vaccinated);
     }
 
     void meet(Dog otherDog){
+      // This method will help dogs meet each other.
       System.out.println(this.name+" & "+otherDog.name+" are friends");
       this.name=this.name+" & "+otherDog.name;
       System.out.println(this.name);
@@ -30,6 +33,12 @@ class Dog{
 
     void sleep(){
       System.out.println(this.name+" is sleeping 🐕‍🦺🐕‍🦺🐕‍🦺");
+    }
+
+    void healthCheck(){
+      System.out.println("Name of Dog: "+this.name);
+      System.out.println("Age of Dog: "+this.age);
+      System.out.println("Vaccination status of Dog: "+this.vaccinated);
     }
 }
 
@@ -99,9 +108,15 @@ public static void main(String[] args){
 
     Dog newDog=new Dog();
     newDog.name="Daisy";
-    dog2=newDog;
-    System.out.println(dog1.name);//Bryan
-    System.out.println(dog2.name);//Daisy
-    System.out.println(dogKen.name);//Bolt
+    newDog.age=5;
+    newDog.bark();
+    newDog.vaccination();
+    
+    dogKen.healthCheck();
+
+    dog1.healthCheck();
+    dog2.healthCheck();
+    newDog.healthCheck();
+    
     }
   }
