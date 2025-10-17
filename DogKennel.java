@@ -97,6 +97,11 @@ public static void main(String[] args){
     dog2.name="Tucker";
     dog2.sleep();//Tucker is sleeping ?????????
 
-    // I guess Java don't recognise emojis
+    Dog newDog=new Dog();
+    newDog.name="Daisy";
+    dog2=newDog;
+    System.out.println(dog1.name);//Bryan
+    System.out.println(dog2.name);//Daisy
+    System.out.println(dogKen.name);//Bolt
     }
   }
